@@ -2,4 +2,4 @@
 
 * mkdir music
 * mkdir imgs
-* chmod 0775 vk groups.ru* ./vk groups.ru
+* chmod 0775 vk groups.ru* ./vk groups.ру

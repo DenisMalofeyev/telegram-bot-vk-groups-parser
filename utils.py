@@ -118,3 +118,16 @@ def init_logger():
     logging.basicConfig(filename=config.log_name + '.log',
                         format='[%(asctime)s] %(filename)s:%(lineno)d %(levelname)s - %(message)s',
                         datefmt='%d.%m.%Y %H:%M:%S')
+     if config.log_level:
+        if config.log_level.lower() == 'debug':
+            logger.setLevel(logging.DEBUG)
+        elif config.log_level.lower() == 'info':
+            logger.setLevel(logging.INFO)
+        elif config.log_level.lower() == 'warn' or config.log_level.lower() == 'warning':
+            logger.setLevel(logging.WARNING)
+        elif config.log_level.lower() == 'error':
+            logger.setLevel(logging.ERROR)
+        else:
+            logger.setLevel(logging.WARNING)
+    else:
+        logger.setLevel(logging.WARNING)

@@ -1,2 +1,5 @@
-# telegram-bot-vk-groups-parser
-Telegram bot vk groups parser.
+# telegrambot-vk_groups_parser
+
+* mkdir music
+* mkdir imgs
+* chmod 0775 vk groups.ru* ./vk groups.ru

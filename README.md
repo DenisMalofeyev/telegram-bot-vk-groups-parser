@@ -1,4 +1,4 @@
-# telegrambot-vk_groups_parser
+# telegram-bot-vk-groups-parser
 
 * mkdir music
 * mkdir imgs

@@ -11,7 +11,6 @@ for entry in config.categories.split(','):
     storage.save(entry.strip(), [])
     storage.save(entry.strip() + config.users_db_postfix, [])
 
-    
 list_categories = config.categories.split(',')
 list_entries = config.cat_entries.split('\n')
 if len(list_categories) != len(list_entries):
@@ -23,7 +22,6 @@ else:
             storage.append(list_categories[i], list_entries[i].split(',')[j].strip(), strict=True)
 
 print(len(storage.get('News')[1]))
-
 
 storage.save('expire_time', 0)
 storage.save('token', 0)

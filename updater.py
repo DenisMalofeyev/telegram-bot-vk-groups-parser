@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-При изменении списка групп, необходимо запустить этот файл
-"""
-
-from shelver import Shelver
-from config import database_file, categories, cat_entries
-
-
 list_categories = categories.split(',')
 list_entries = cat_entries.split('\n')
 storage = Shelver(database_file)
